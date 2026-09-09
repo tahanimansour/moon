@@ -10,8 +10,29 @@ html {
 
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "EB Garamond", serif;
+}
+
+body {
+    font-family: var(--primaryFont);
+}
+
 .header {
     padding: 21.84px 0;
+}
+
+.header a {
+    text-decoration-line: none;
+    font-size: 14px;
+    font-family: var(--primaryFont);
+    color: var(--primaryColor);
+
 }
 
 .container {
@@ -75,6 +96,12 @@ html {
     text-align: center;
 }
 
+.collection-section h2 {
+    margin-top: 23px;
+    text-transform: capitalize;
+    color: var(--primaryColor);
+}
+
 @media screen and (min-width:0) and (max-width:400px) {
     .collection-section .row {
         flex-direction: column;
@@ -102,17 +129,100 @@ img {
     width: 100%;
 }
 
-h2 {
-    margin-top: 23px;
-    text-transform: capitalize;
-    color: var(--primaryColor);
+.best-sellers {
+    text-align: center;
+    padding: 80px 0;
+
 }
 
+.best-sellers .row{
+    gap: 30px;
+}
 
-a {
-    text-decoration-line: none;
+.best-sellers .item {
+    text-align: left;
+    width: calc((100% - 90px) / 4 );
+
+}
+
+.best-sellers h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 48px;
+}
+
+.best-sellers .item-content {
+    margin-top: 24px;
+
+}
+
+.best-sellers h3 {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.best-sellers .price {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.best-sellers .description {
+    color: #807F86;
+    width: 80%;
+    line-height: 22px;
+    margin-top: 24px;
+    margin-bottom: 34px;
+}
+
+.best-sellers .addToCart {
+    padding: 15px 81px;
+    background-color: #fff;
+    border: 1px solid #000;
+    letter-spacing: 4px;
     font-size: 14px;
-    font-family: var(--primaryFont);
-    color: var(--primaryColor);
+    font-weight: 600;
+    width: 100%;
+}
 
+@media screen and (min-width:0) and (max-width:400px) {
+    
+     .best-sellers .item {
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (min-width:401px) and (max-width:700px) {
+    .best-sellers .item{
+        width:calc((100% - 30px) / 2);
+    }
+
+    .best-sellers h3{
+        font-size: 16px;
+    }
+    
+    .best-sellers .addToCart{
+        padding: 15px 30px;
+    }
+  
+}
+
+@media screen and (min-width:701px) and (max-width:990px) {
+    .best-sellers .item{
+        width:calc((100% - 60px) / 3);
+    }
+
+    .best-sellers h3{
+        font-size: 16px;
+    }
+    
+    .best-sellers .addToCart{
+        padding: 15px 40px;
+    }
 }
