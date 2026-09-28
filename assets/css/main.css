@@ -255,7 +255,7 @@ a {
     background-position: center;
 }
 
-.sellers {
+.sellers, .arrivals {
     padding: 80px 0;
 }
 
@@ -268,7 +268,7 @@ a {
     text-align: center;
 }
 
-.sellers .row {
+.sellers .row, .arrivals .row {
     align-items: stretch;
     justify-content: flex-start;
     gap: 40px 30px;
@@ -399,7 +399,7 @@ a {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1000px) {
-    .sellers .row {
+    .sellers .row, .arrivals .row {
         gap: 40px 20px;
     }
 
@@ -495,11 +495,11 @@ a {
         height: 348px;
     }
 
-    .sellers {
+    .sellers, .arrivals {
         padding: 40px 0;
     }
 
-    .sellers .row {
+    .sellers .row, .arrivals .row {
         gap: 40px 10px;
     }
 
