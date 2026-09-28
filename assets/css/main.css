@@ -468,6 +468,105 @@ a {
     text-align: center;
 }
 
+.footer {
+    background-color: var(--primaryColor);
+    color: #CAC9CF;
+}
+
+.footer a {
+    color: #CAC9CF;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .row {
+    align-items: stretch;
+    border-bottom: 1px solid var(--descriptionColor);
+}
+
+.foot-info {
+    width: 42%;
+    padding: 48px 80px;
+    border-right: 1px solid var(--descriptionColor);
+}
+
+.foot-info img {
+    width: 145px;
+    filter: brightness(0) invert(85%);
+}
+
+.foot-info p {
+    margin-top: 24px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.foot-info .btn {
+    margin-top: 32px;
+    padding: 10px 18px;
+    border-color: #CAC9CF;
+    background-color: transparent;
+    color: #fff;
+}
+
+.foot-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 58%;
+    padding: 56px 0 60px 80px;
+}
+
+.foot-col {
+    width: calc((100% - 80px) / 3);
+}
+
+.foot-col h3 {
+    margin-bottom: 24px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.foot-col ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style: none;
+}
+
+.foot-col li {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 32px 0;
+    color: var(--descriptionColor);
+    line-height: 22px;
+    text-align: center;
+}
+
+.rights {
+    margin: 0 4px;
+    padding: 0 4px;
+    border-left: 1px solid var(--descriptionColor);
+    border-right: 1px solid var(--descriptionColor);
+}
+
+.copy a {
+    color: var(--descriptionColor);
+    text-decoration: underline;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1100px) {
     .nav {
         gap: 30px;
@@ -492,6 +591,21 @@ a {
 
     .blog-text {
         padding: 48px 30px;
+    }
+
+    .foot-info {
+        width: 34%;
+        padding: 48px 24px 48px 0;
+    }
+
+    .foot-links {
+        width: 66%;
+        gap: 20px;
+        padding-left: 32px;
+    }
+
+    .foot-col {
+        width: calc((100% - 40px) / 3);
     }
 }
 
@@ -673,5 +787,44 @@ a {
 
     .signup {
         padding: 40px 40px 70px;
+    }
+
+    .foot-info {
+        width: 100%;
+        padding: 32px 0;
+        border-right: 0;
+        border-bottom: 1px solid #CAC9CF;
+    }
+
+    .foot-info p {
+        max-width: 305px;
+    }
+
+    .foot-info .btn {
+        margin-top: 24px;
+    }
+
+    .foot-links {
+        width: 100%;
+        gap: 40px 48px;
+        padding: 24px 0 32px;
+    }
+
+    .foot-col {
+        width: calc((100% - 48px) / 2);
+    }
+
+    .copy {
+        display: block;
+    }
+
+    .copy span {
+        display: block;
+    }
+
+    .rights {
+        margin: 0;
+        padding: 0;
+        border: 0;
     }
 }
